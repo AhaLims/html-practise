@@ -1,0 +1,28 @@
+body
+{
+    font-size:20px;
+    line-height:29px;
+}
+
+#head-part
+{
+    font-size:30px;
+    font-weight: bolder;
+}
+#body-part .h2
+{
+    font-size : 20px;
+    font-weight: bold;
+}
+
+#body-part .h3
+{
+    font-size: 18px;
+}
+#body-part .normal
+{
+    font-size: 15px;
+}
+
+
+

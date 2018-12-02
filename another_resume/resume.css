@@ -27,14 +27,16 @@ body{
 {
     color:white;
 }
-#left-part table{
+#left-part table
+{
 	overflow: auto;
 }
 
 
 #main-part 
 {
-    float:left;
+    /*由于left-part 也设置了float:left 所以这两个div元素是并排的*/
+    float: left;
 	-webkit-flex: 1;
 	flex: 1;
 	width: 600px;

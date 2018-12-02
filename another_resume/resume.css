@@ -1,0 +1,49 @@
+body{
+    /*font-family:Consolas;/*代码er必须用Consolas啊*/
+    font-size:20px;
+    line-height:29px;
+}
+
+#left-part
+{
+    float:left;
+    /*display: inline-block;*/
+    min-width: 280px;
+	overflow: auto;
+	padding-right: 40px;
+	padding: 0px 0px 0px 0px;
+	font-size: 0.9em;
+	text-indent: 1.6em; /*一个元素 首行 文本内容之前应该有多少水平空格*/
+    background:  rgb(3, 101, 182);
+    height:200;/*这样不行....???*/
+}
+#left-part p
+{
+    font-weight:bold;
+    background-color: white;
+    color:rgb(3, 101, 182);
+}
+#left-part
+{
+    color:white;
+}
+#left-part table{
+	overflow: auto;
+}
+
+
+#main-part 
+{
+    float:left;
+	-webkit-flex: 1;
+	flex: 1;
+	width: 600px;
+	/*background: #EFF1F0;*/
+	padding-left: 50px;
+}
+#main-part p
+{
+    font-weight:bold;
+    /*??不行??*/
+    color:rgb(14, 132, 187);
+}

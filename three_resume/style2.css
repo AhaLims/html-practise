@@ -1,10 +1,10 @@
 #head-part
 {
     width: 200px;
-    height: 1000px;
+    height: 900px;
     text-align: center;
     font-size: 35px;
-    font-weight: bold;
+    font-weight: bolder;
     background-color: #396ddf;
     color: aliceblue;
     float: left;
@@ -17,18 +17,25 @@
 }
 #body-part
 {
-    left: 10px;
+    position: relative;
+    left: 15px;
     float: left;
 }
 #body-part .h2
 {
-
+    font-size: 25px;
+    font-weight: bold;
 }
 #body-part .h3
 {
-
+    font-weight: 600;
+    font-size: 23px;
+}
+#body-part .normal span
+{
+    font-weight: 600;
 }
 #body-part .normal
 {
-
+font-size: 17px;
 }

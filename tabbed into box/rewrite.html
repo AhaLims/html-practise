@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tabbed info box</title>
+  <style>
+html 
+{
+    font-family: sans-serif;
+  }
+body
+{
+    margin: 0px;
+}
+  .tab li 
+  {
+      float:left;
+      list-style-type: none;   
+  }
+  .tab li a
+  {
+    width:150px;
+    background-color: red;
+    text-align: center;
+    display: inline-block;/*??*/
+    text-decoration: none;
+    line-height: 3;
+    color: black;
+    
+  }
+  /*focus刚刚点击的事件 hover表示鼠标移到上面 active类默认状态*/
+
+  .tab li a:focus, .tab li a:hover, .tab .active
+{
+    background-color: brown;
+    color: white;
+}
+
+
+
+  .article
+  {
+    clear:both;
+    color: aliceblue;
+  }
+
+  .article li
+  {
+    position: absolute;
+      float:left;
+      list-style-type: none;
+      width: 450px;
+      height: 500px;
+      background-color: brown;
+  }
+  .article .active-panel
+  {
+      z-index:1;
+  }
+  </style>
+</head>
+<body>
+<div class="tab">
+    <ur>
+        <li><a href="#" class="active">Tab1</a></li>
+        <li><a href="#">Tab2</a></li>
+        <li><a href="#">Tab3</a></li>
+    </ur>
+</div>
+
+<div class="article">
+    <ur>
+
+        <li class="active-panel">
+                <h2>the first tab</h2>
+                test
+        </li>
+
+        <li>
+            <h2>the second tab</h2>
+            testtest
+        </li>
+
+        <li>
+            <h2>the third tab</h2>
+            testtesttest
+        </li>
+    </ur>
+
+</div>
+</body>
+
+<script>
+    var tabs = document.querySelectorAll('.tab li a');
+    var panels = document.querySelectorAll('.article li');
+    
+    for(i = 0;i < tabs.length; i++)
+    {
+        var tab = tabs[i];
+        setTabHandler(tab,i);
+    }
+
+    function setTabHandler(tab,tabPos)
+    {
+        tab.onclick = function()
+        {
+            for(i = 0; i < tabs.length; i++)
+            {
+                tabs[i].className = '';
+            }
+            tab.className = 'active';
+            for(i = 0; i < panels.length; i++)
+            {
+                panels[i].className = '';
+            }
+            panels[tabPos].className = 'active-panel';
+        }
+    }
+</script>
+
+
+</html>

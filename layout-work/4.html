@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+we can identify left part and right part
+main part is self-adaption
+use negative margin-left to implement
+attention main class should be put at the head of body part 
+-->
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0">
+        <title>Insert title here</title>
+        <style type="text/css">
+.container,html,body
+{
+    height: 100%;
+    width: 100%;
+}
+
+.main
+{
+    float: left;
+    background-color: red;
+    height: 100px;
+    width: 100%;
+}
+.left
+{
+    margin-left: -100%;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.right
+{
+    margin-left: -150px;/*same with width!*/
+    float: left;
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+}
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">main</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+
+</html>

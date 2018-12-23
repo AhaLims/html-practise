@@ -175,6 +175,10 @@ body
     background-color: transparent;
     color: white;
 }
+button
+{
+    cursor: pointer;
+}
 
 
 
